@@ -1,0 +1,36 @@
+.otw_single_image_preview span{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+.otw_single_image_preview img{
+	max-width: 100%;
+	max-height: 100px;
+}
+.otw_single_image_preview a.otw_dismiss_icon{
+	position: absolute;
+	top:-9px;
+	right:-9px;
+}
+a.otw_dismiss_icon{
+	text-decoration: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+
+a.otw_dismiss_icon:hover::before{
+	color:#f00;
+}
+a.otw_dismiss_icon::before{
+	background: 0 0;
+  color: #b4b9be;
+  content: "\f153";
+  display: inline-block;
+  font: 400 20px/20px dashicons;
+  height: 20px;
+  text-align: center;
+  width: 20px;
+  -webkit-font-smoothing: antialiased;
+}
